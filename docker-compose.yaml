@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./data/init/transactions.csv:/docker-entrypoint-initdb.d/transactions.csv
+      - ./models/transactions/load/load.sql:/docker-entrypoint-initdb.d/01_init.sql
+      - ./models/transactions/staging/transform_transactions.sql:/docker-entrypoint-initdb.d/02_transactions.sql
+      - ./models/transactions/final/balance.sql:/docker-entrypoint-initdb.d/03_balance.sql
+    ports:
+      - 5432:5432
+

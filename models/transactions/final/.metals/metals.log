@@ -1,0 +1,4 @@
+2023.07.18 21:16:48 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/facundoroot/Documentos/scala/simple/models/transactions/final/.metals/lsp.trace.json or /home/facundoroot/.cache/metals/lsp.trace.json[0m
+2023.07.18 21:16:49 INFO  logging to file /home/facundoroot/Documentos/scala/simple/.metals/metals.log[0m
+2023.07.18 21:17:25 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/facundoroot/Documentos/scala/simple/models/transactions/final/.metals/lsp.trace.json or /home/facundoroot/.cache/metals/lsp.trace.json[0m
+2023.07.18 21:17:26 INFO  logging to file /home/facundoroot/Documentos/scala/simple/.metals/metals.log[0m

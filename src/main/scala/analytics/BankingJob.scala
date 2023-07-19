@@ -22,8 +22,8 @@ object BankingJob {
       .master("local")
       .getOrCreate()
     
-    val accountsDf = spark.read.option("header", "true").schema(accountsSchema).csv("resources/accounts.csv")
-    val transactionsDf = spark.read.option("header", "true").schema(transactionsSchema).csv("resources/transactions.csv")
+    val accountsDf = spark.read.option("header", "true").schema(accountsSchema).csv("data/spark/accounts.csv")
+    val transactionsDf = spark.read.option("header", "true").schema(transactionsSchema).csv("data/spark/transactions.csv")
 
     val validDf = extractValidTransactions(accountsDf, transactionsDf)
     val distinctTransactionsCount = distinctTransactions(transactionsDf)
