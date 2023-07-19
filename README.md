@@ -1,6 +1,6 @@
 # My Scala Project
 
-This is a Scala project built with SBT. It contains [brief description of your project].
+This is a Scala project built with SBT. It contains the solution for a data engineer challenge.
 
 ## Prerequisites
 
